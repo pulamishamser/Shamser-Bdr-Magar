@@ -254,15 +254,13 @@ kbd {
   background-color: #212529;
   border-radius: 0.25rem;
 }
-kbd kbd 
-{
+kbd kbd {
   padding: 0;
   font-size: 1em;
   font-weight: 700;
 }
 
-figure 
-{
+figure {
   margin: 0 0 1rem;
 }
 
@@ -11066,25 +11064,41 @@ html {
   background-color: #1a252f;
 }
 
-nav ul{
-  float: left;
-  margin-right: 10px;
+ul{
+list-style:none;
+margin-right: 6px;
 }
+ul li{
+width:110px;
+float: left;
+border: 6px; solid white;
+height:30px; 
+text-align:center;
+line-height: 20px;
 
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
 }
-nav ul{
+ ul li a{
+  text-decoration: none;
+ color: white;
   font-size: 13px;
+deiplay:block;
 }
 
+ul li:hover{
+background-color:gray
+}
 
+ul ul{
+display:none;
+}
 
+ul li:hover ul{
+display:block;
+}
 
-
-
-
-
-
+ul ul {
+display:one;
+}
+ul li:hover ul {
+display:block;
+}
