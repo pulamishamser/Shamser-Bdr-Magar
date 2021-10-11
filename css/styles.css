@@ -11063,29 +11063,27 @@ html {
 .copyright {
   background-color: #1a252f;
 }
-
 ul{
 list-style:none;
-margin-left: 6px;
+margin-left: 2px;
 }
 ul li{
-width:110px;
+width:124px;
 float: left;
-border: 6px; solid white;
-height:30px; 
-text-align:center;
-line-height: 20px;
-
+border: 2px; solid red;
+height:26px; 
+text-align:left;
+line-height: 10px;
 }
  ul li a{
-  text-decoration: none;
- color: white;
-  font-size: 13px;
-deiplay:block;
+text-decoration: none;
+color: white;
+font-size: 12px;
+display:block;
 }
 
 ul li:hover{
-background-color:gray
+background-color:red
 }
 
 ul ul{
@@ -11097,8 +11095,115 @@ display:block;
 }
 
 ul ul {
-display:one;
+display:none;
 }
 ul li:hover ul {
 display:block;
 }
+
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+
+
+
+/* Content */
+
+.content {
+  padding: 8px 80px;
+  font-family: "Roboto", sans-serif;
+}
+
+.content p {
+  line-height: 1.2;
+}
+
+.content img {
+  max-height: 400px;
+}
+
+/* Share Buttons */
+
+.share-btn-container {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 95%;
+  transform: translateY(-50%);
+}
+
+.share-btn-container a i {
+  font-size: 32px;
+}
+
+.share-btn-container a {
+  margin: 12px 0;
+  transition: 500ms;
+}
+
+.share-btn-container a:hover {
+  transform: scale(1.2);
+}
+
+.share-btn-container .fa-facebook {
+  color: #3b5998;
+}
+
+.share-btn-container .fa-twitter {
+  color: #1da1f2;
+}
+
+.share-btn-container .fa-linkedin {
+  color: #0077b5;
+}
+
+.share-btn-container .fa-pinterest {
+  color: #bd081c;
+}
+
+.share-btn-container .fa-whatsapp {
+  color: #25d366;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .content {
+    padding: 8px 32px;
+  }
+
+  .share-btn-container {
+    transform: unset;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    padding: 16px 0;
+    justify-content: right;
+  }
+
+  .share-btn-container a {
+    margin: 0 32px;
+  }
+}
+
+
+
+
